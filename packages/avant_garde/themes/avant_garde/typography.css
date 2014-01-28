@@ -1,18 +1,22 @@
 .container a, .container a:visited {
-	/* customize_link */color: #dd176a;/* customize_link */
+	/* customize_link */color: #f74d4d;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 .container a:hover, .container a:focus {
-	/* customize_link_hover */color: #ffffff;/* customize_link_hover */
+	/* customize_link_hover */color: #ffffff;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 h1.logo a, h1.logo a:visited {
-	/* customize_header_logo */color: #dd176a;/* customize_header_logo */
+	/* customize_header_logo */color: #ef4e56;/* customize_header_logo */
 	text-shadow: 1px 1px 0px #000000;
 	filter: dropshadow(color=#000000, offx=1, offy=1);
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 h1.logo a:hover, h1.logo a:focus {
 	/* customize_Logo_Hover_Color */color: #ffffff;/* customize_Logo_Hover_Color */
 	text-decoration: none;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 h3.slogan {
 	/* customize_Slogan */color: #E0ECF8/* customize_Slogan */

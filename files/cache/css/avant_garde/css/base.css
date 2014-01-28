@@ -63,15 +63,15 @@
 /* #Basic Styles
 ================================================== */
 	body {
-		background: #fff url(http://euler.dev/packages/avant_garde/themes/avant_garde/images/cloudy.jpg);
+		background: #fff url(http://euler.dev/packages/avant_garde/themes/avant_garde/eulerimages/picture_page_02.jpg);
 		background-repeat: repeat;
-		font: 14px/21px 'ProstoRegular', tahoma, Arial, sans-serif;
+		font: 14px/21px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
 		color: #eee;
-	}
-	.container { background: url(http://euler.dev/packages/avant_garde/themes/avant_garde/images/b2.png); background-repeat: repeat; }
- 	.header { margin: 0 0 8px 0; padding: 0px; min-height: 60px; border-bottom: 4px dotted #E0ECF8;
+}
+	.container { background: rgba(0,0,0,0.90) none repeat; }
+ 	.header { margin: 0 0 8px 0; padding: 0px; min-height: 60px; border-bottom: 2px solid #E0ECF8;
 		background: url(http://euler.dev/packages/avant_garde/themes/avant_garde/images/baby_curls_headerbg.png); background-repeat: repeat;
 	}
  	.header h1, .header h2, .header h3 { border-bottom: 0;}
@@ -80,7 +80,7 @@
 	.header h3 { font-size: 18px; line-height: 22px; padding: 5px 15px 5px 10px; margin: 0; }
  	.header br { height: 1px !important; padding: 0 !important; margin: 0 !important; }
  	
-	.footer { border-top: 4px dotted #E0ECF8; border-bottom: 4px dotted #E0ECF8; color: #fff; 
+	.footer { border-top: 2px solid #E0ECF8; border-bottom: 2px solid #E0ECF8; color: #fff; 
 		background: url(http://euler.dev/packages/avant_garde/themes/avant_garde/images/baby_curls_headerbg.png);
 		background-repeat: repeat; margin: 10px 0 10px 0;
 	}
@@ -90,8 +90,9 @@
 /* #Typography
 ================================================== */
 	.container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
-		font-family: 'ProstoRegular', tahoma, Arial, sans-serif;
-		font-weight: normal; }
+		font-weight: normal;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 46px; line-height: 50px; margin-bottom: 12px;}
 	h2 { font-size: 35px; line-height: 40px; margin-bottom: 8px;}
@@ -126,15 +127,18 @@
 /* #Logo & Slogan
 ================================================== */
 	h1.logo {
-		padding: 10px 10px 5px 10px !important;
+		padding: 5px 5px 0px 10px !important;
 		margin: 0px !important;
 		border-bottom: 0;
 		text-align: center;
 	}
-	h1.logo a { font-family: 'CaviarDreamsBold', trebuchet ms, tahoma, arial, sans-serif; font-size: 88px; font-size: 8.8rem; line-height: 92px; line-height: 9.0rem; }
+	h1.logo a {
+	color: #ef4e56;
+	font: bold 3em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
 	h3.slogan { text-align: center; text-transform: uppercase; padding: 0 0 10px 0 !important; margin: 0 !important; }
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-		h1.logo a { font-size: 68px; font-size: 6.8rem; line-height: 74px; line-height: 7.4rem; }
+		h1.logo a { font-size: 48px; font-size: 6.8rem; line-height: 74px; line-height: 7.4rem; }
 		h3.slogan { font-size: 18px; line-height: 22px; }
 	}
 	@media only screen and (max-width: 767px) {
@@ -154,15 +158,14 @@
 	@media (max-width: 960px) {
       nav.nav ul.nav    { display: none; }
       nav.nav select { display: inline-block; width: 98% !important; margin: 5px; padding: 5px 0px 5px 0px;
-			font-family: 'CaviarDreamsBoldItalic', tahoma, Arial, sans-serif;
-		}
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
 	}
 	.nav {
-		border-bottom: 4px dotted #E0ECF8;
+		border-bottom: 2px solid #E0ECF8;
 		display: block;
 		position: relative;
-		margin: 0; padding: 0;
-		font-family: 'CaviarDreamsBoldItalic', tahoma, Arial, sans-serif;
+		margin: 5px; padding: 5px;
 		font-size: 22px; line-height: 26px;
 	}
 	#footnav { border: none; }
@@ -179,11 +182,12 @@
 		display: block;
 		text-transform: uppercase;
 	}
-	ul.nav li { padding: 0px 0px 6px 0px; display: block;
+	ul.nav li { padding: 
+	0px 0px 6px 0px; display: block;
 	}
 
 	ul.nav li a { 
-		background: #dd176a;
+		background: #f74e51;
 		-webkit-box-shadow: -2px 2px 0px 2px #000000;
 		-moz-box-shadow: -2px 2px 0px 2px #000000;
 		box-shadow: -2px 2px 0px 2px #000000; 
@@ -199,7 +203,7 @@
 .nav ul li {
 	list-style: none inside;
 	display: block inline;
-	margin-top: 5px;
+	margin: 5px;
 	padding: 0px 10px 0px 10px;
 }
 .nav ul li ul li a { 
@@ -277,8 +281,6 @@
 	.container input[type="submit"],
 	.container input[type="reset"],
 	.container input[type="button"]{
-	font-size: 17px; font-size: 1.5rem; font-weight: bold;
-	font-family: 'CaviarDreamsBold', trebuchet ms, tahoma, arial, sans-serif;
 	/* A semi-transparent text shadow */
 	text-shadow:1px 1px 0 rgba(255,255,255,0.4);
 	/* Overriding the default underline styling of the links */
@@ -313,6 +315,7 @@
 	-webkit-transition:background-position 1s;
 	-moz-transition:background-position 1s;
 	transition:background-position 1s;
+	font: bold 1.5rem "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
   .container a.button:hover,
@@ -480,7 +483,7 @@
 ================================================== */
 /* Tag Block */
 .ccm-tags-display 			{ padding: 10px; background: url(http://euler.dev/packages/avant_garde/themes/avant_garde/images/b2.png); background-repeat: repeat; }
-.ccm-tags-display h4			{ font-weight: bold; min-width: 80px; display: inline-block; color: #ddd; padding: 6px; background: #dd176a;
+.ccm-tags-display h4			{ font-weight: bold; min-width: 80px; display: inline-block; color: #ddd; padding: 6px; background: #ef4e56;
 		-webkit-box-shadow: -2px 2px 0px 2px #000000;
 		-moz-box-shadow: -2px 2px 0px 2px #000000;
 		box-shadow: -2px 2px 0px 2px #000000; 
