@@ -1,0 +1,13 @@
+  <?php xml version="1.0"?>
+  <schema version="0.3">
+  <table name="background_image">
+    <field name="id" type="I" size="11">
+      <KEY/>
+      <AUTOINCREMENT/>
+    </field>
+    <field name="bFID" type="I" size="11">
+    </field>
+    <field name="element" type="C" size="255">
+    </field>
+  </table>
+  </schema>

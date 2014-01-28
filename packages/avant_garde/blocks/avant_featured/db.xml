@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btAvantFeatured">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="avantTitle" type="X2">
+		</field>
+		<field name="avantDesc" type="X2">
+		</field>
+		<field name="avantLinkText" type="X2">
+		</field>
+		<field name="fID" type="I">
+			<unsigned />
+			<default value="0" />
+		</field>
+		<field name="pageID" type="I" ></field>
+	</table>
+</schema>
